@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./criar-pensamento.component.css']
 })
 export class CriarPensamentoComponent {
- @Input() pensamento = {
-    id: '1',
+ @Input() pensamento: Pensamento = {
+    id: 1,
     conteudo: 'aprendendo angular',
     autoria: 'Dev',
     modelo: '',

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -7,25 +8,11 @@ import { Component } from '@angular/core';
 })
 export class ListarPensamentoComponent {
   //usa o exempo de ngfor para carregar os dados do component filho no component pai
-  listaPensamentos=[
-    {
-      id: '1',
-      conteudo: 'aprendendo angular',
-      autoria: 'Dev',
-      modelo: 'modelo2',
-    },
-    {
-      id: '2',
-      conteudo: 'Cominicação',
-      autoria: 'Dev',
-      modelo: 'modelo1',
-    },
-    {
-      id: '3',
-      conteudo: 'teste',
-      autoria: 'Dev',
-      modelo: 'modelo3',
-    }
-  ];
+  listaPensamentos: Pensamento[] =[];
   //ngif
+  constructor(private service:PensamentoService){}
+
+  ngOnInit(): void {
+    this.service.listar()
+  }
 }
