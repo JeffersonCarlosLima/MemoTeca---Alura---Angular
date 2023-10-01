@@ -1,22 +1,22 @@
 {
-    "pensamentos":[
+    "pensamentos": [
         {
-            "id":1,
-            "conteudo":"O que é um projeto de software?",
-            "autoria":"Jef",
+            "id": 1,
+            "conteudo": "Que bom que vc veio",
+            "autoria": "Nay",
+            "modelo": "modelo1"
+        },
+        {
+            "id": 2,
+            "conteudo": "Estudando Angular",
+            "autoria": "Dev Alura",
             "modelo": "modelo2"
         },
         {
-            "id":2,
-            "conteudo":"Qualquer coisa",
-            "autoria":"Jef",
+            "id": 3,
+            "conteudo": "Angular é o melhor'",
+            "autoria": "Dev Alura",
             "modelo": "modelo3"
-        },
-        {
-            "id":3,
-            "conteudo":"teste",
-            "autoria":"Jef",
-            "modelo": "modelo1"
         }
     ]
 }
